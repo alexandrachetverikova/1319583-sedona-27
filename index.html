@@ -8,60 +8,57 @@
 <header class="header-1">
  <nav class="navigation-1">
    <ul class="site-navigation">
-     <li class="info"><a href="">Информация</a></li>
-     <li class="foto"><a href="">Фото и видео</a></li>
-     <li class="map"><a href="">Карта штата</a></li>
-     <li class="hotel"><a href="">Гостиницы</a></li>
+     <li class="info"><a href="#" tabindex="1">Информация</a></li>
+     <li class="foto"><a href="#" tabindex="2">Фото и видео</a></li>
+     <li class="map"><a href="#" tabindex="3">Карта штата</a></li>
+     <li class="hotel"><a href="#" tabindex="4">Гостиницы</a></li>
    </ul>
  </nav>
 </header>
 <main class="sedona">
-  <h1 class="main-heading">Welcome to the gorgeous Sedona<q>Because the Grand Canyon sucks</q></h1>
+  <h1 class="main-heading">Welcome <br>to the gorgeous <br>Sedona<br><q>Because the Grand <br>Canyon sucks</q></h1>
   <div class="sucks">
-  <dl class="list-sedona">
-    <dt>Седона</dt>
-    <dd>Небольшой городок в Аризоне, <br>заслуживающий большего!</dd>
-  </dl>
-  <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+    <h3>Седона - небольшой городок в Аризоне, <br>заслуживающий большего!</h3>
+  <span class="gray">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
   </div>
   <section class="interest">
-    <span>Заинтересовались?</span>
-    <h2>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие преложения гостинц в Седоне</h2>
+    <h2>Заинтересовались?</h2>
+    <span class="gray">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие преложения гостинц в Седоне</span>
   </section>
  <form class="search-hotels" method="post" action="">
- <fieldset class="search">
-   <legend>Поиск гостиницы в седоне</legend>
+   <h4>Поиск гостиницы в седоне</h4>
    <div class="check-in">
-     <label for="check_in_date">Дата заезда:</label>
-     <input type="date" name="check_in_date" id="check_in_date" value="24 апреля 2017" tabindex="1">
+     <label for="arrival">Дата заезда:</label>
+     <input type="date" name="arrival" id="arrival" value="24 апреля 2017" tabindex="5">
    </div>
    <div class="check-out">
-     <label for="check_out_date">Дата выезда:</label>
-     <input type="date" name="check_out_date" id="check_out_date" value="4 июля 2017" tabindex="2">
+     <label for="departure">Дата выезда:</label>
+     <input type="date" name="departure" id="departure" value="4 июля 2017" tabindex="6">
    </div>
    <div class="amount">
      <label for="amount_adults">Взрослые:</label>
-     <input type="number" min="5" max="50" step="5" id="amount_adults" name="amount_adults" value="2" tabindex="3">
+     <input type="number" min="1" max="100" step="1" id="amount_adults" name="amount_adults" value="2" tabindex="7">
 
      <label for="amount_children">Дети:</label>
-     <input type="number" min="5" max="50" step="5" id="amount_children" name="amount_children" tabindex="4">
+     <input type="number" min="1" max="100" step="1" id="amount_children" name="amount_children" tabindex="8">
    </div>
    <div class="buttons">
-    <input type="submit" value="Найти"> 
+     <button tabindex="9">Найти</button>
    </div>
- </fieldset>
  </form>
 </main>
  <footer class="footer">
-   <p><a href="https://www.instagram.com">#visitsedona</a>
+   <p><a href="https://www.instagram.com" title="INSTAGRAM" tabindex="10">#visitsedona</a>
     <br>тел: +7(495)666-02-66
   </p>
   <section class="footer-img">
-    <a href="https://twitter.com"><img src="" alt="Твитер"></a>
-    <a href="https://www.facebook.com"><img src="" alt="Фейсбук"></a>
-    <a href="https://www.youtube.com"><img src="" alt="Ютуб"></a>
+    <ul class="footer-a">
+     <li class="twitter"><a href="https://twitter.com" title="TWITTER" tabindex="11"><img src="" alt="Твитер"></a></li>
+     <li class="facebook"><a href="https://www.facebook.com" title="FACEBOOK" tabindex="12"><img src="" alt="Фейсбук"></a></li>
+     <li class="youtube"><a href="https://www.youtube.com" title="YOUTUBE" tabindex="13"><img src="" alt="Ютуб"></a></li>
+   </ul> 
   </section>
-   <span class="academy-cite"><a href="https://htmlacademy.ru-">website by html academy</a></span>
+   <a href="https://htmlacademy.ru-" tabindex="14"><img src="" alt="website by html academy"></a>
 </footer>
   </body>
 </html>
