@@ -20,32 +20,29 @@
      <form class="search-hotels" method="post" action="">
      <div class="infrastructure">
        <h3 class="white">Инфраструктура:</h3>
-       <input type="checkbox" name="pool" id="pool" checked>
+       <input type="checkbox" name="pool" id="pool" value="swimming-pool" checked>
       <label for="pool">Бассейн</label> 
-       <input type="checkbox" name="parking" id="parking">
+       <input type="checkbox" name="parking" id="parking" value="parking">
       <label for="parking">Парковка</label>
-       <input type="checkbox" name="wifi" id="wifi">
+       <input type="checkbox" name="wifi" id="wifi" value="wi-fi">
       <label for="wifi">Wi-fi</label>
      </div>
      <div class="housing-type">
        <h3 class="white">Тип жилья:</h3>
-       <input type="checkbox" name="house" id="house" checked>
+       <input type="checkbox" name="house" id="house" value="hotel" checked>
       <label for="house">Гостиница</label> 
-       <input type="checkbox" name="motel" id="motel" checked>
+       <input type="checkbox" name="motel" id="motel" value="motel" checked>
       <label for="motel">Мотель</label>
-       <input type="checkbox" name="apartment" id="apartment" checked>
+       <input type="checkbox" name="apartment" id="apartment" value="apartment" checked>
       <label for="apartment">Апартаменты</label>
      </div>
-     <div class="cost">
-       <label for="rating"><h3 class="white">Стоимость в сутки (р):</h3></label>
-     <table border="1">
-      <tr>
-        <td>От 0</td>
-        <td>До 3000</td>
-      </tr>
-    </table>
-       <input type="range" id="rating" name="rating" min="0" max="3000" step="1">
-         <br><span class="show"><button>Показать</button></span>
+     <div class="range">
+       <h3 class="white">Стоимость в сутки (р):</h3> 
+       <div class="controller-cost">
+        <label class="min">от <input type="text" name="min" id="min" value="0"></label>
+        <label class="max">до <input type="text" name="max" id="max"  value="3000"></label>
+      </div>
+      <button>Показать</button>
      </div>
      </form>
    </section>
@@ -54,8 +51,8 @@
       Сортировка:
      <ul class="hotel-sort">
        <li class="hotel-price"><span>по цене</span></li>
-       <li class="hotel-type"><a href="#">по типу</a></li>
-       <li class="hotel-rating"><a href="#">по рейтингу</a></li>
+       <li class="hotel-type"><button>по типу</button></li>
+       <li class="hotel-rating"><button>по рейтингу</button></li>
     </ul>
     </p>
   </div>
@@ -63,7 +60,7 @@
   <section class="hotels">
    <ul>
     <li>
-      <img src="" alt="">AMARA RESORT & SPA
+      <div class="amara-img"><img src="" alt=""></div>AMARA RESORT & SPA
       <div class="etc"><p class="gray">Гостиница</p><a href="#"><h3 class="white">Подробнее</h3></a></div>
       <div class="reserv"><p class="gray">от 4000 р.</p>
         <button class="reservation"><h3 class="white">Забронировать</h3></button></div>
@@ -71,7 +68,7 @@
         </li>
      <hr>
     <li>
-      <img src="" alt="">DESERT QUAIL INN
+      <div class="desert-img"><img src="" alt=""></div>DESERT QUAIL INN
       <div class="etc"><p class="gray">Мотель</p><a href="#"><h3 class="white">Подробнее</h3></a></div>
       <div class="reserv"><p class="gray">от 3000 р.</p>
         <button class="reservation"><h3 class="white">Забронировать</h3></button></div>
@@ -79,7 +76,7 @@
         </li>
      <hr>
     <li> 
-      <img src="" alt="">VILLAS AT POCO DIABLO 
+      <div class="villas-img"><img src="" alt=""></div><VILLAS AT POCO DIABLO 
       <div class="etc"><p class="gray">Апартаменты</p><a href="#"><h3 class="white">Подробнее</h3</a></div>
       <div class="reserv"><p class="gray">от 2000 р.</p>
         <button class="reservation"><h3 class="white">Забронировать</h3></button></div>
@@ -92,15 +89,13 @@
   <footer class="footer">
    <section class="contacts">
    <a href="https://www.instagram.com" title="INSTAGRAM">#visitsedona</a>
-     <br><a href="tel:+74956660266">+7(495)666-02-66</a>
+   <a href="tel:+74956660266">+7(495)666-02-66</a>
    </section>
     <ul class="social"> 
      <li class="twitter"><a href="https://twitter.com" title="TWITTER"><img src="" alt="Твитер"></a></li>
      <li class="facebook"><a href="https://www.facebook.com" title="FACEBOOK"><img src="" alt="Фейсбук"></a></li>
      <li class="youtube"><a href="https://www.youtube.com" title="YOUTUBE"><img src="" alt="Ютуб"></a></li>
-   </ul> 
-   <section="academy">
+   </ul>  
    <a href="https://htmlacademy.ru-"><p>website by<img src="" alt="html academy"></a>
-   </section>
 </footer>
 </body>
