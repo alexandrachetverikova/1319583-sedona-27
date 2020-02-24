@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [ALEXANDRA CHETVERIKOVA](https://up.htmlacademy.ru/htmlcss/27/user/1319583).
-* Наставник: [Артем Михайлов] (https://htmlacademy.ru/profile/id327277).
+* Наставник: [Артем Михайлов](https://htmlacademy.ru/profile/id327277).
 
 ---
 
