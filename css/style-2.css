@@ -25,10 +25,6 @@ line-height: 26px;
 color: #000000;
 }
 
-.site-navigation {
- list-style: none; 
-}
-
 .site-navigation a {
   color: #000000;
 }
@@ -40,6 +36,37 @@ color: #000000;
 .site-navigation a:active {
 opacity: 0.3;
 color: #000000;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.site-navigation {
+  height: 56px; 
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  padding: 0 73px;
+  list-style: none;
+}
+
+.navigation_item {
+  display: flex;
+  margin: 0px 15px;
+}
+
+.logo {
+  padding: 22px 130px 0 120px;
+  margin: 0;
+  text-align: center;
+}
+
+.logo_link {
+  display: inline-block;
 }
 
 .site-navigation .hotel span {
@@ -103,14 +130,45 @@ a.name:active {
 color: #000000;
 }
 
-.social li {
+.footer {
+  padding: 36px 102px 36px 128px;
+  margin-top: 78px;
+  
+  background-color: #ffffff;
+  opacity: 0.9;
+  min-height: 120px;
+}
+
+.footer .footer-container {
+  display: flex;
+}
+
+.footer-contacts {
+  font-size: 21px;
+ font-weight: 700;
+ line-height: 26px;
+  width: 251px;
+  margin: 0;
+  margin-right: 145px;
+  
+  min-height: 52px;
+}
+
+.footer-social {
+  width: 150px;
+  
+  min-height: 48px;
+}
+
+.footer-copyright {
+  width: 197px;
+  margin: 0;
+  margin-left: auto;
+  
+  min-height: 40px;
+}
+ 
+.social {
   list-style: none;
   text-align: center;
-}
-
-.contacts {
- font-size: 21px;
-font-weight: 700;
-line-height: 26px;
-}
-
+} 
