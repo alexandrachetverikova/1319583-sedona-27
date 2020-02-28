@@ -8,17 +8,19 @@
    <link href="css/style-2.css" rel="stylesheet">
   </head>
  <body>
-  <header class="header">
-   <nav class="navigation">
-     <ul class="site-navigation">
-      <li class="info"><a href="#">Информация</a></li>
-      <li class="foto"><a href="#">Фото и видео</a></li>
-      <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седоны">
-      <li class="map"><a href="#">Карта штата</a></li>
-      <li class="hotel"><span>Гостиницы</span></li>
-    </ul>
-   </nav>
- </header>
+   <header class="header">
+ <nav class="navigation">
+   <div class="container">
+   <ul class="site-navigation">
+     <li class="navigation_item"><a href="#">Информация</a></li>
+     <li class="navigation_item"><a href="#">Фото и видео</a></li>
+     <li class="navigation_logo"><a href="#" class="logo_link"><img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седоны" class="logo"></a></li>
+     <li class="navigation_item"><a href="#">Карта штата</a></li>
+     <li class="navigation_item"><a href="#">Гостиницы</a></li>
+   </ul>
+   </div>
+ </nav> 
+    </header>
  <main class="sedona">
    <section class="hotels-form">
      <form class="search-hotels" method="post" action="">
@@ -92,16 +94,22 @@
   </section>
  </main>
     <hr>
-  <footer class="footer">
-   <section class="contacts">
+   <footer class="footer">
+   <div class="footer-container">
+   <p class="footer-contacts">
    <a href="https://www.instagram.com" title="INSTAGRAM">#visitsedona</a>
-     <br><a href="tel:+74956660266">+7(495)666-02-66</a>
-   </section>
+   <br><a href="tel:+74956660266">+7(495)666-02-66</a>
+   </p>
+  <div class="footer-social">  
     <ul class="social"> 
-     <li class="twitter"><a href="https://twitter.com" title="TWITTER"><img src="img/twitter.svg" width="17" height="15" alt="Твиттер"></a></li>
-     <li class="facebook"><a href="https://www.facebook.com" title="FACEBOOK"><img src="img/facebook.svg" width="12" height="22" alt="Фейсбук"></a></li>
-     <li class="youtube"><a href="https://www.youtube.com" title="YOUTUBE"><img src="img/youtube.svg" width="20" height="16" alt="Ютуб"></a></li>
+     <li><a class="social-button" href="https://twitter.com" title="TWITTER"><img src="img/twitter.svg" width="17" height="15" alt="Твиттер"></a></li>
+     <li><a class="social-button" href="https://www.facebook.com" title="FACEBOOK"><img src="img/facebook.svg" width="12" height="22" alt="Фейсбук"></a></li>
+     <li><a class="social-button" href="https://www.youtube.com" title="YOUTUBE"><img src="img/youtube.svg" width="20" height="16" alt="Ютуб"></a></li>
    </ul> 
-   <a href="https://htmlacademy.ru-"><p>website by<img src="img/logo_academy.png" width="114" height="40" alt="html academy"></a>
+     </div>
+  <p class="footer-copyright">
+<a href="https://htmlacademy.ru-"><p>website by<img src="img/logo_academy.png" width="114" height="40" alt="html academy"></a>
+     </p>
+   </div>
 </footer>
 </body>
