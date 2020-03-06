@@ -69,6 +69,35 @@ color: #000000;
   display: inline-block;
 }
 
+.background-sedona {
+  position: relative;
+
+  padding-top: 70px;
+  padding-bottom: 90px;
+
+  width: 100%;
+  height: 800px;
+
+  background: 
+  url(../img/index_sedona.jpg) no-repeat 0 20%;
+  background-size: 100% 800px;
+}
+
+.background-sedona:after {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 57px;
+  content: "";
+
+  background: url(../img/Shape.png) no-repeat 0 0;
+  background-size: 100% 57px;
+}
+ 
+
 .symbols-list,
 .pluses-list {
   list-style: none;
@@ -79,11 +108,25 @@ color: #000000;
   text-align: center;
 }
 
-.symbol-item h3,
-.plus-item h3 {
+.symbol-item h2,
+.plus-item h2 {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+}
+
+.symbol-item {
+  display: inline-block;
+  width: 33.33%;
+  min-height: 330px;
+  box-sizing: border-box;
+
+  padding-top: 160px;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  text-align: center;
+  vertical-align: top;
 }
   
 .footer {
@@ -151,7 +194,7 @@ line-height: 24px;
   line-height: 24px;
 } 
 
-.modal h3 {
+.modal h2 {
   color: #ffffff;
   font-size: 21px;
   font-weight: 700;
